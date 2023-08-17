@@ -1,0 +1,871 @@
+@import "reset.css";
+@import "common.css";
+
+/* 首页统一样式 */
+input {
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+input:focus-visible {
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  word-break: break-all;
+}
+
+a {
+  color: #37a;
+}
+
+a:hover {
+  background-color: #37a;
+  color: #fff !important;
+}
+
+a:active {
+  background-color: #f93;
+  color: #fff;
+}
+
+a:visited {
+  color: #669;
+}
+
+a > img {
+  display: block;
+  width: 100%;
+}
+
+/* 统一样式结束 */
+
+/* 首页通用样式 */
+.container {
+  width: 950px;
+  margin: 0 auto;
+  color: #999999;
+}
+
+.hidden_word {
+  display: none;
+}
+
+.section {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.section:nth-child(2n) {
+  padding: 40px 0 20px 0;
+  background-color: #f7f7f7;
+}
+
+.section_title {
+  font-size: 15px;
+  color: #062;
+  line-height: 150%;
+  margin-bottom: 12px;
+}
+
+.section_title span {
+  font-size: 12px;
+  color: #666666;
+}
+/* section 主 */
+.main {
+  overflow: hidden;
+}
+
+/* main 4列列表 */
+.media_list li {
+  display: inline-block;
+  width: 24%;
+  margin-bottom: 20px;
+  vertical-align: top;
+  text-align: center;
+  font-size: 12px;
+}
+
+.media_list li .pic {
+  height: 145px;
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+
+.media_list li .pic a img {
+  margin: 0 auto;
+  width: 100px;
+}
+
+.media_list li .title {
+  line-height: 1.45;
+  font-size: 13px;
+  margin-bottom: 4px;
+  word-wrap: break-word;
+}
+
+.media_list li .mark {
+  margin-bottom: 8px;
+  line-height: 1;
+}
+
+.media_list li .mark span {
+  display: inline-block;
+  width: 55px;
+  height: 11px;
+  margin-right: 3px;
+  background: url(../images/star.png) no-repeat left top / cover;
+}
+.media_list li .mark i {
+  margin-left: 4px;
+  color: #e09015;
+}
+
+/* 评分星星 */
+/* 5星 */
+.media_list li .mark .star50 {
+  background-position: 0 0;
+}
+/* 4.5星 */
+.media_list li .mark .star45 {
+  background-position: 0 -11px;
+}
+/* 4星 */
+.media_list li .mark .star40 {
+  background-position: 0 -22px;
+}
+/* 3.5星 */
+.media_list li .mark .star35 {
+  background-position: 0 -33px;
+}
+/* ... */
+
+.media_list li .btn_link {
+  padding: 2px 10px;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+/* section 左 */
+.aside_left {
+  float: left;
+  width: 100px;
+  margin-right: 20px;
+}
+.aside_left .section_title a {
+  font-size: 24px;
+}
+
+.section_list li {
+  font-size: 14px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.section_list_icon {
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.section_list_icon a i {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../images/app_icons.jpg") no-repeat left top/cover;
+  box-shadow: 1px 1px 2px #999;
+  margin-bottom: 5px;
+  border-radius: 10px;
+}
+
+.aside_left ul li .choose {
+  position: relative;
+}
+.aside_left ul li .choose::after {
+  content: "";
+  width: 17px;
+  height: 7px;
+  background: url(../images/new_menu.gif) no-repeat left top/cover;
+  position: absolute;
+  right: -20px;
+  top: 0;
+  cursor: auto;
+}
+
+/* section 右 */
+.aside_right {
+  float: right;
+  width: 265px;
+  margin-left: 30px;
+}
+
+.topic .topic_list li {
+  margin-bottom: 10px;
+}
+
+.topic .topic_list li .topic_title {
+  font-size: 14px;
+}
+
+.topic .topic_list li .topic_footer {
+  font-size: 12px;
+}
+
+/* 分组的标签 */
+.label ul .label_title {
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
+.label ul li:nth-child(n + 2) {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+/* 2列列表 */
+.event_list {
+  margin-left: -30px;
+}
+.event_list li {
+  display: inline-block;
+  width: 248px;
+  margin-left: 30px;
+  margin-top: 30px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.event_list li .pic {
+  margin: 0 15px 10px 0;
+  width: 48px;
+}
+
+.event_list li .info {
+  overflow: hidden;
+}
+
+.event_list li .info .desc {
+  margin-top: 5px;
+}
+
+.event_list li .info a {
+  font-size: 13px;
+}
+
+.event_list li .info .desc span {
+  display: block;
+  font-size: 12px;
+}
+
+/* 通用样式结束 */
+
+/* 首页头部 */
+/* 头部网站地址 */
+.home_header {
+  height: 96.89px;
+  margin-bottom: 25px;
+}
+
+.home_header .home_header_logo {
+  width: auto;
+  height: 34px;
+  margin-bottom: 34.89px;
+  background-color: #edf4ec;
+}
+
+.home_header .home_header_logo .douban_logo {
+  display: inline-block;
+  padding: 7px 0;
+  margin-left: 10px;
+  width: 102px;
+  height: 20px;
+}
+
+.home_header .home_header_logo .douban_logo .logo {
+  display: inline-block;
+  width: 102px;
+  height: 20px;
+  background: url(../images/logo_db.png) no-repeat left top/contain;
+}
+
+/* 网址、搜索和导航栏 */
+.home_header .home_header_nav {
+  /* height: 32.89px; */
+  width: 1080px;
+  margin: 0 auto;
+}
+/* 网址 */
+.home_header .home_header_nav .site_name {
+  width: 73px;
+  height: 24px;
+  line-height: 24px;
+  margin: 3px 24px 0 0;
+  background: url(../images/sitename.png) no-repeat left top/contain;
+}
+
+/* 搜索 */
+.home_header .home_header_search {
+  width: 270px;
+  height: 30px;
+  position: relative;
+}
+
+.home_header .home_header_search .header_srh {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+.home_header .home_header_search .header_srh::placeholder {
+  color: #ccc;
+}
+
+.home_header .home_header_search .header_srh_btn {
+  display: inline;
+  width: 30px;
+  height: 30px;
+  background: url(../images/search.svg) no-repeat left top/contain;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* 导航 */
+.home_header .home_header_link {
+  width: 514.69px;
+  height: 21px;
+  margin-top: 6px;
+}
+
+.home_header .home_header_link .link_list li {
+  height: 21px;
+  width: 40px;
+  display: inline-block;
+  margin-right: 14px;
+}
+
+.home_header .home_header_link .link_list li a {
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  background: url(../images/anony_nav_logo@2x.png) no-repeat left top/462px 20px;
+}
+
+.home_header .home_header_link .link_list li .lnk_movie {
+  background-position: -60px 0;
+}
+.home_header .home_header_link .link_list li .lnk_music {
+  background-position: -120px 0;
+}
+.home_header .home_header_link .link_list li .lnk_city {
+  background-position: -299px 0;
+}
+.home_header .home_header_link .link_list li .lnk_group {
+  background-position: -180px 0;
+}
+.home_header .home_header_link .link_list li .lnk_read {
+  background: url(../images/ic_read_home_nav@2x.png) no-repeat left top/cover;
+}
+.home_header .home_header_link .link_list li .lnk_fm {
+  background-position: -240px 0;
+}
+.home_header .home_header_link .link_list li .lnk_time {
+  background: url(../images/ic_shijian_home_nav@2x.png) no-repeat left top/cover;
+}
+
+.home_header .home_header_link .link_list li .lnk_doupin {
+  width: 42px;
+  background-position: -420px 0;
+}
+/* 首页头部结束 */
+
+/* banner和注册登录部分 */
+.home_banner {
+  height: 300px;
+  margin: auto;
+  margin-bottom: 25px;
+  background: url(../images//1771365ca98ig9er706.jpg) no-repeat;
+  background-size: contain;
+  background-position: calc(50%-305px) top;
+  background-color: #edf4ed;
+}
+
+.home_banner .container {
+  height: 300px;
+  position: relative;
+}
+
+/* app */
+.home_banner .container .app {
+  width: 150px;
+  height: 120px;
+  position: absolute;
+  right: 340px;
+  top: 80px;
+}
+
+.home_banner .container .app .app_title {
+  width: 150px;
+  height: 24px;
+  line-height: 24px;
+  margin: 20px 0;
+  font-size: 25px;
+  color: #111111;
+}
+
+.home_banner .container .app .app_title span {
+  margin-left: 10px;
+}
+
+.home_banner .container .app .app_slogan {
+  box-sizing: border-box;
+  width: 114px;
+  height: 30px;
+  line-height: 1;
+  display: inline-block;
+  padding: 9px 21px;
+  margin-right: 2px;
+  color: #fff;
+  background-color: #00b51d;
+  border-radius: 2px;
+}
+
+.home_banner .container .app_dw {
+  display: inline-block;
+  position: relative;
+  vertical-align: bottom;
+}
+
+.home_banner .container .app_dw .app_qr img {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #00b51d;
+  border-radius: 2px;
+}
+
+.home_banner .container .app_dw .app_qr_expand {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  font-size: 13px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+.home_banner .container .app_dw .app_qr_expand img {
+  width: 160px;
+  height: 160px;
+}
+
+.home_banner .container .app_dw .app_qr:hover + .app_qr_expand {
+  display: block;
+}
+
+/* 登录注册 */
+.home_banner .container iframe {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+/* banner和注册登录部分结束 */
+
+/* 热点内容部分 */
+/* 主体 */
+.home_hot_content .container .main .albums {
+  width: 350px;
+  margin-right: 30px;
+}
+
+/* 主体左 */
+.home_hot_content .container .main .albums .albums_list {
+  text-align: justify;
+  margin-top: -10px;
+}
+.home_hot_content .container .main .albums .albums_list::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+.home_hot_content .container .main .albums .albums_list li {
+  display: inline-block;
+  width: 170px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.home_hot_content .container .main .albums .albums_list li .albums_list_img {
+  vertical-align: middle;
+}
+/* 主体右 */
+.home_hot_content .container .main .notes {
+  overflow: hidden;
+}
+
+.home_hot_content .container .main .notes .notes_list li:nth-child(n + 2) {
+  margin-top: 12px;
+}
+
+.home_hot_content .container .main .notes .notes_list li .text {
+  height: 100px;
+  color: #666;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* 右侧边 */
+.home_hot_content .container .aside_right .adv_bj {
+  width: 250px;
+  height: 125px;
+  margin: 10px 0;
+  position: relative;
+  text-align: center;
+}
+
+.home_hot_content .container .aside_right .adv_bj::after {
+  content: "广告";
+  display: block;
+  width: 32px;
+  height: 20px;
+  padding: 0 4px;
+  line-height: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.home_hot_content .container .aside_right .topic .topic_list li .topic_footer {
+  color: #aaaaaa;
+  font-size: 13px;
+}
+/* 热点内容部分结束 */
+
+/* 豆瓣时间部分 */
+/* 左 */
+.home_dbtime .container .aside_left .section_title a {
+  color: #494949;
+}
+
+/* 主 */
+.home_dbtime .container .main ul li {
+  display: inline-block;
+  width: 100px;
+  margin: 0 60px 30px 0;
+  text-align: center;
+}
+
+.home_dbtime .container .main ul li .img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.home_dbtime .container .main ul li .img::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: url("../images/ic_dbtime.png") no-repeat left top/cover;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.home_dbtime .container .main ul li .title {
+  color: #333333;
+  font-size: 13px;
+  line-height: 1.38;
+}
+
+.home_dbtime .container .main ul li .type {
+  display: block;
+  line-height: 1;
+  margin-top: 10px;
+}
+/* 豆瓣时间部分结束 */
+
+/* 豆瓣电影部分 */
+.db_movie a {
+  color: #2277aa;
+}
+/* 主 */
+
+.db_movie .container .main ul li .title a {
+  color: #333;
+}
+
+.db_movie .container .main .media_list li a .btn_movie {
+  color: #fff;
+  background-color: #1c8bd0;
+}
+.db_movie .container .main .media_list li a .btn_movie:hover {
+  background-color: #047fbc;
+}
+
+/* 右 */
+.db_movie .container .aside_right ol li {
+  margin-bottom: 6px;
+  padding-bottom: 5px;
+  list-style-type: decimal;
+  list-style-position: inside;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.db_movie .container .aside_right ol li a {
+  margin-left: 5px;
+}
+/* 豆瓣电影部分结束 */
+
+/* 豆瓣小组部分 */
+.db_group a {
+  color: #017a85;
+}
+/* 左 */
+.db_group .aside_left .section_title a {
+  color: #007982;
+}
+/* 主 */
+/* 右 */
+.db_group .container .aside_right .group_label ul .label_title a {
+  color: #333;
+}
+
+/* 豆瓣小组部分结束 */
+
+/* 豆瓣读书部分 */
+.db_read a {
+  color: #614e3c;
+}
+/* 左 */
+.db_read .aside_left .section_title a {
+  color: #4a2f14;
+}
+.db_read .container .aside_left .section_list_icon a .read_icon {
+  background-position: 0 0;
+}
+/* 主 */
+.db_read .container .main .media_list li .author span {
+  color: #111111;
+}
+
+.db_read .container .main .media_list li .price span {
+  margin-bottom: 4px;
+  color: #666666;
+}
+
+.db_read .container .main .media_list li a .btn_read {
+  background-color: #999a95;
+  color: #fff;
+}
+
+.db_read .container .main .media_list li a .btn_read:hover {
+  background-color: #878882;
+}
+
+/* 右 */
+.db_read .container .aside_right ul {
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 10px;
+}
+
+.db_read .container .aside_right ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.db_read .container .aside_right ul .read_title {
+  color: #999;
+}
+/* 豆瓣读书部分结束 */
+
+/* 豆瓣音乐部分 */
+.db_music a {
+  color: #555d53;
+}
+/* 左 */
+.db_music .container .aside_left .section_title a {
+  color: #f38d00;
+}
+
+.db_music .container .aside_left .section_list_icon a .fm_icon {
+  background-position: -250px 0;
+}
+
+.db_music .container .aside_left .section_list_icon a .music_icon {
+  background-position: -50px 0;
+}
+/* 主 */
+.db_music .container .main .media_list li .pic {
+  height: 80px;
+}
+
+.db_music .container .main .media_list li .pic a img {
+  width: 80px;
+}
+
+.db_music .container .main .media_list li .title {
+  font-size: 12px;
+}
+
+.db_music .container .main .media_list li .title .num {
+  padding-right: 5px;
+}
+
+.db_music .container .main .media_list li .author {
+  padding-bottom: 3px;
+}
+/* 右 */
+.db_music .container .aside_right .event_list {
+  margin-left: 0;
+}
+
+.db_music .container .aside_right .event_list li .num {
+  padding-right: 10px;
+  color: #111111;
+}
+
+.db_music .container .aside_right .event_list li {
+  margin: 0 0 10px 0;
+}
+/* 豆瓣音乐部分结束 */
+
+/* 豆品部分 */
+.db_product a {
+  color: #3377a9;
+}
+/* 左 */
+.db_product .container .aside_left .section_title a {
+  color: #1f9432;
+}
+/* 主 */
+.db_product .container .main .pro_list li {
+  margin: 0 20px 30px 0;
+}
+
+.db_product .container .main .pro_list li .pro_pic {
+  height: 220px;
+  width: 220px;
+}
+
+.db_product .container .main .pro_list li .pro_info {
+  margin-top: 10px;
+  line-height: 22px;
+  font-size: 16px;
+  overflow: hidden;
+}
+.db_product .container .main .pro_list li .pro_info .price {
+  color: #e55457;
+}
+
+/* 右 */
+.db_product .container .aside_right .pro_topic {
+  margin-bottom: 30px;
+}
+.db_product .container .aside_right .pro_topic a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 95px;
+  background: url("../images/product-right.jpg") no-repeat left top/cover;
+  margin-bottom: 5px;
+}
+
+.db_product .container .aside_right a {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.db_product .container .aside_right .topic .topic_list li {
+  margin-bottom: 10px;
+}
+
+.db_product .container .aside_right ul li .topic_footer span {
+  color: #6a6a6a;
+  font-size: 12px;
+}
+/* 豆品部分结束 */
+
+/* 豆瓣同城部分 */
+.db_city a {
+  color: #664433;
+}
+/* 左 */
+.db_city .aside_left .section_title a {
+  color: #ec5303;
+}
+/* 主 */
+.db_city .main .event_list li {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.db_city .main .event_list li .pic {
+  width: 70px;
+}
+
+.db_city .main .event_list li .info .desc span {
+  color: #666;
+}
+/* 右 */
+.db_city .aside_right .city_label .label_title a {
+  color: #333333;
+}
+/* 豆瓣同城部分结束 */
+
+/* 页脚部分 */
+.home_footer {
+  color: #999999;
+}
+
+/* .home_footer a {
+  color: #3377aa;
+} */
+
+.home_footer .container .papers_link a {
+  padding: 0 10px;
+  border-left: 1px solid #999999;
+}
+
+.home_footer .container .papers_link a:nth-child(1) {
+  padding-left: 0;
+  border-left: 0;
+}
+
+.home_footer .container .tousu {
+  position: relative;
+}
+
+.home_footer .container .tousu::after {
+  content: "";
+  display: block;
+  width: 110px;
+  height: 16px;
+  background: url("../images/tousu.jpeg") no-repeat left top/contain;
+  position: absolute;
+  left: 230px;
+  top: 0;
+}
+
+.home_footer .container img {
+  width: 15px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.home_footer .container .ft_link a {
+  padding: 0 5px;
+}
+/* 页脚部分结束 */

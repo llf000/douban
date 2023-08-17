@@ -1,0 +1,398 @@
+@import "reset.css";
+@import "common.css";
+
+/* 统一样式 */
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 33px;
+  border: 1px solid #ccc;
+  padding-left: 5px;
+  font-size: 13px;
+}
+
+input:focus-visible {
+  border: 1px solid #ccc;
+  outline: 0;
+}
+
+button {
+  border: none;
+  background-color: #00b51d;
+  cursor: pointer;
+}
+
+a {
+  color: #41ac52;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+/* 统一样式结束 */
+.container {
+  box-sizing: border-box;
+  width: 300px;
+  height: 296px;
+  padding: 30px 10px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+  position: relative;
+}
+
+/* 短信登录注册 密码登录 */
+/* 点击扫码登录 */
+.textLogin .click {
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: url("../images/login_code.png") no-repeat right top/100% 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.textLogin .click:hover::after {
+  content: "扫码登录";
+  display: block;
+  color: #666;
+  font-size: 13px;
+  width: 53px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 5px;
+  background: #f5faf9;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+/* 头部 */
+.textLogin .login_title {
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.textLogin .login_title span {
+  display: inline-block;
+  width: 50%;
+  height: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #9b9b9b;
+}
+
+.textLogin .login_title .selected {
+  color: #333;
+  border-bottom: 1px solid #494949;
+  font-weight: 600;
+  margin-bottom: -1px;
+}
+/* 登录信息 */
+.textLogin .login_det .form {
+  border-bottom: 1px solid #ececec;
+}
+.textLogin .login_det .form > div > div {
+  margin-bottom: 10px;
+  position: relative;
+}
+/* 短信登录信息 */
+/* 提示 */
+.textLogin .login_det .form .mes_det .mes_dis {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+/* 手机号 */
+.textLogin .login_det .form .mes_det .mes_num {
+  position: relative;
+}
+
+.textLogin .login_det .form .mes_det .mes_num input {
+  padding-left: 55px;
+}
+/* 选择的地区 */
+.textLogin .login_det .form .mes_det .mes_num .country_code .selected {
+  width: 45px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 0;
+  margin: auto;
+  cursor: pointer;
+  border-right: 1px solid #dfdfdf;
+}
+
+/* .textLogin .login_det .form .mes_det .mes_num .country_code .selected::after {
+  content: "";
+  height: 30px;
+  width: 45px;
+  border-left: 1px solid #dfdfdf;
+} */
+/* 选择地区 */
+.country_code .country_choose {
+  width: 100%;
+  height: 100%;
+  background: #0000003d;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+/* 蒙层 */
+.country_code .country_choose .choose_code {
+  width: 270px;
+  height: 260px;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}
+/* 选择提示 */
+.country_code .country_choose .choose_code .choose_title {
+  width: 100%;
+  box-sizing: border-box;
+  background: #ebf5eb;
+  color: #060;
+  padding: 8px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+}
+/* 关闭选择 */
+.country_code .country_choose .choose_code .choose_title .right {
+  color: #999;
+  font-weight: lighter;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  cursor: pointer;
+}
+
+.country_code .country_choose .choose_code .choose_title .right:hover {
+  color: #aaa;
+}
+
+.country_code .country_choose .choose_code .choose_title .right:active {
+  color: #494949;
+}
+/* 可选择的列表 */
+.country_code .country_choose .choose_list ul {
+  box-sizing: border-box;
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  overflow: auto;
+}
+
+.country_code .country_choose .choose_list ul li {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+  margin-top: -1px;
+  color: #aaa;
+  cursor: pointer;
+  line-height: 2.6;
+  font-size: 14px;
+}
+
+.country_code .country_choose .choose_list ul li .left {
+  color: #494949;
+  font-weight: 700;
+}
+
+.country_code .country_choose .choose_list ul li.selected {
+  color: #42bd56;
+}
+
+.country_code .country_choose .choose_list ul li.selected .left {
+  color: inherit;
+}
+
+.country_code .country_choose .choose_list ul li.selected .left::after {
+  content: "\2714";
+  margin-left: 10px;
+}
+/* 获取验证码 */
+.textLogin .login_det .form .mes_det .mes_ver .btn_ver {
+  position: absolute;
+  width: 85px;
+  height: 33px;
+  top: 0;
+  right: 0;
+  background-color: transparent;
+  color: #41ac52;
+}
+
+.btn_login {
+  box-sizing: border-box;
+  width: 280px;
+  height: 33px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 3px;
+  color: #fff;
+}
+
+.btn_login.disabled {
+  background-color: rgba(66, 189, 86, 0.5);
+}
+
+/* 密码登录 */
+.textLogin .login_det .form .pw_det .pw_dis {
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+/* 第三方登录 */
+.textLogin .login_3rd {
+  width: 100%;
+  height: 33px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.textLogin .login_3rd .weChat {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  margin-left: 12px;
+  overflow: hidden;
+  background: url("../images/weixin.svg") no-repeat left top/22px 22px;
+  position: absolute;
+  top: 0;
+  left: 80px;
+}
+
+.textLogin .login_3rd .weibo {
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  margin-left: 12px;
+  overflow: hidden;
+  background: url("../images/weibo.svg") no-repeat left top/22px 22px;
+  position: absolute;
+  top: 0;
+  left: 112px;
+}
+/* 短信登录注册 密码登录结束 */
+
+/* 二维码登录 */
+/* 短信登录/注册 */
+.codeLogin .click {
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background: url("../images/login_text.png") no-repeat right top/100% 100%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.codeLogin .click:hover::after {
+  content: "短信登录/注册";
+  display: block;
+  color: #666;
+  font-size: 13px;
+  width: 85px;
+  height: 20px;
+  line-height: 20px;
+  padding: 3px 5px;
+  background: #f5faf9;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  border-radius: 3px;
+  position: absolute;
+  top: 0;
+  right: 50px;
+}
+
+.codeLogin .login_title {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.codeLogin .login_code .code_img {
+  height: 172px;
+  text-align: center;
+  padding-top: 10px;
+}
+.codeLogin .login_code .code_img img {
+  height: 170px;
+  width: 170px;
+}
+
+.codeLogin .login_foot {
+  width: 230px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 auto;
+  padding: 3px 10px;
+  background-color: rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  margin-top: 10px;
+  color: #494949;
+  text-align: center;
+}
+
+/* 二维码失效 */
+.codeLogin .login_error {
+  height: 172px;
+  width: 172px;
+  text-align: center;
+  margin-left: -86px;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+}
+
+.codeLogin .login_error::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.9;
+  filter: opacity(50);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.codeLogin .login_error span {
+  display: block;
+  width: 100%;
+  color: #000;
+  font-size: 15px;
+  margin: 50px 0 10px;
+  position: relative;
+  z-index: 10;
+}
+
+.codeLogin .login_error a {
+  display: block;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(66, 189, 86, 0.5);
+  border-radius: 3px;
+  padding: 10px 0;
+  position: relative;
+  z-index: 10;
+}
+/* 二维码登录结束 */

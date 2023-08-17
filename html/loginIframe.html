@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="../style/loginIframe.css" />
+    <title>loginIframe</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- 短信登录/注册 密码登录 -->
+      <div class="textLogin">
+        <a class="click">扫码登录</a>
+        <div class="login_title clearfix">
+          <span class="mes_title left selected">短信登录 / 注册</span>
+          <span class="pw_title right">密码登录</span>
+        </div>
+        <!-- 登录信息 -->
+        <div class="login_det">
+          <form class="form">
+            <!-- 短信登录/注册 -->
+            <div class="mes_det">
+              <div class="mes_dis">
+                <p>
+                  请仔细阅读 <a>豆瓣使用协议、</a><a>豆瓣个人信息保护政策</a>
+                </p>
+              </div>
+              <div class="mes_num">
+                <input type="num" placeholder="手机号" />
+                <div class="country_code">
+                  <div class="selected">+86</div>
+                  <div class="country_choose hidden">
+                    <div class="choose_code">
+                      <div class="choose_title clearfix">
+                        <span class="left">选择国际区号</span
+                        ><a class="right">x</a>
+                      </div>
+                      <div class="choose_list">
+                        <ul>
+                          <li class="selected clearfix">
+                            <span class="left">国家1</span
+                            ><span class="right">+001</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家2</span
+                            ><span class="right">+002</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家3</span
+                            ><span class="right">+003</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家4</span
+                            ><span class="right">+004</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家5</span
+                            ><span class="right">+005</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家6</span
+                            ><span class="right">+006</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家7</span
+                            ><span class="right">+007</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家8</span
+                            ><span class="right">+008</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家9</span
+                            ><span class="right">+009</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家10</span
+                            ><span class="right">+010</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家11</span
+                            ><span class="right">+011</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家12</span
+                            ><span class="right">+012</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家13</span
+                            ><span class="right">+013</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家14</span
+                            ><span class="right">+014</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家15</span
+                            ><span class="right">+015</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家16</span
+                            ><span class="right">+016</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家17</span
+                            ><span class="right">+017</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家18</span
+                            ><span class="right">+018</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家19</span
+                            ><span class="right">+019</span>
+                          </li>
+                          <li class="clearfix">
+                            <span class="left">国家20</span
+                            ><span class="right">+020</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mes_ver">
+                <input type="num" placeholder="验证码" />
+                <button type="button" class="btn_ver">获取验证码</button>
+              </div>
+              <button type="button" class="btn_login disabled">登录豆瓣</button>
+              <div class="met_help">
+                <p class="clearfix">
+                  <a class="help_link right">收不到验证码</a>
+                </p>
+              </div>
+            </div>
+            <!-- 密码登录 -->
+            <div class="pw_det hidden">
+              <div class="pw_dis">
+                <p class="clearfix">
+                  <a class="right">找回密码</a>
+                </p>
+              </div>
+              <div class="pw_num">
+                <input type="num" placeholder="手机号 / 邮箱" />
+              </div>
+              <div class="pw_pw">
+                <input type="password" placeholder="密码" />
+              </div>
+              <button type="button" class="btn_login disabled">登录豆瓣</button>
+              <div class="met_help">
+                <p class="clearfix">
+                  <a class="help_link right">海外手机登录</a>
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!-- 第三方登录 -->
+        <div class="login_3rd">
+          <span>第三方登录：</span>
+          <a class="weChat" href="" title="用微信登录">微信</a>
+          <a class="weibo" href="" title="用微博登录">微博</a>
+        </div>
+      </div>
+      <!-- 二维码登录 -->
+      <div class="codeLogin hidden">
+        <a class="click">短信登录/注册</a>
+        <div class="login_title">
+          <p>二维码登录</p>
+        </div>
+        <div class="login_code">
+          <div class="code_img">
+            <img
+              src="../images/qrlogin_code=douban-qrlogin_lEaKzfCrzpD2hw.png" />
+          </div>
+        </div>
+
+        <div class="login_foot">
+          <p>请打开豆瓣App扫一扫 或<a> 短信登录验证</a></p>
+        </div>
+        <div class="login_error hidden">
+          <span>登录失败</span>
+          <a href="">点击刷新</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
