@@ -393,9 +393,8 @@ a > img {
   height: 300px;
   margin: auto;
   margin-bottom: 25px;
-  background: url(../images//1771365ca98ig9er706.jpg) no-repeat;
-  background-size: contain;
-  background-position: calc(50%-305px) top;
+  background: url(../images//1771365ca98ig9er706.jpg) no-repeat
+    calc(50% - 305px) top/contain;
   background-color: #edf4ed;
 }
 
